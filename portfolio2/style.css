@@ -1,0 +1,94 @@
+/* === Global Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  height: 900vh; /* extended for new sequence */
+  overflow-x: hidden;
+}
+
+/* === Title Text === */
+h1 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0.6s ease;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+/* === Hero Image === */
+#hero-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.8s ease;
+}
+
+/* === Navigation Line === */
+#nav-line {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 200px;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* === Right-side texts (Hi! + Graduation) === */
+#side-text,
+#right-text-2 {
+  position: fixed;
+  top: 50%;
+  left: 65%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  max-width: 25%;
+  line-height: 1.4;
+  z-index: 3;
+}
+
+/* === Left Side Text (name) === */
+#left-text {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  transform: translate(-150%, -50%);
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  max-width: 30%;
+  line-height: 1.4;
+  z-index: 3;
+}
+
+/* === Below Text (new "Computer Engineer TIP(QC) - 2025") === */
+#below-text {
+  position: fixed;
+  top: 35%; /* below the name */
+  left: 20%;
+  transform: translate(-150%, -50%); /* start off-screen left */
+  font-size: 1.8em;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  max-width: 30%;
+  line-height: 1.4;
+  z-index: 3;
+}
